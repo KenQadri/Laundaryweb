@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Nunito;
+}
+
+/* navigation bar div */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 27px 10px 30px 10px;
+    font-size: 20px;
+    background-color: rgb(200, 245, 230);
+}
+.logo{
+    padding-left: 40px;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+}
+.navLinks{
+    width: 40%;
+}
+ .navLinks ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-transform: capitalize;
+} 
+.navLinks a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  
+
+}
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 0;
+  height: 6%;
+  background-color: #007bff;
+  border-radius: 30px;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.navLinks a:hover::after {
+  width: 100%;
+ 
+  opacity: 1;
+} 
+.navLinks a:hover {
+  color: #007bff;
+}
+.username{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: #94beec;
+    border-radius: 12px;
+}
+
+/* hero section div */
+
+.heroSection{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;padding-left: 80px;
+}
+.heroImg img{
+    height: 500px;
+    width: 500px;
+}
+.heroText h2{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.heroText p{
+    font-size: 20px;
+}
+.btn{
+    margin-top: 20px;
+    width: 20vw;
+    height: 40px;
+    background-color: #007bff;
+    border: 0;
+    border-radius: 12px;
+    text-transform: capitalize;
+}
+.btn a{
+    text-decoration: none;
+    color: black;font-size: 15px;
+}
+.btn:hover{
+    background-color: #007bff;
+    scale: 0.96;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.heroText button{
+    
+    padding: 7px;
+    border-radius: 12px;
+}
+
+/* achievement div section */
+
+.achievement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #007bff;
+    font-size: 20px;
+}
+.achieve h2{
+    font-size: 30px;
+}
+.achieveText p{
+    font-size: 15px;
+}
+
+/* .booking service Section div */
+
+.bookingService{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    grid-gap: 10px;
+}
+.book{
+    background-color: rgb(234, 235, 235);
+    height: fit-content;
+    margin-top: 35px;
+    margin-left: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.ourService{
+    height: fit-content;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-transform:capitalize;
+}
+.ourService p{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.ourService h2{
+    font-size: 30px;
+}
+
+.service{
+    margin-left: 30px;
+    display: flex;
+   justify-content: space-between;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   text-transform: capitalize;
+   font-size: 20px;
+}
+.service span{
+    display: flex;
+    gap: 10px;
+}
+.servicePrice{
+    color: #007bff;
+    font-weight: 800;
+}
+.addRemoveBtn{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    background-color: #c2c4c4;
+    border: 0;
+    border-radius: 10px;
+
+}
+.removeAddBtn{
+    background-color: rgba(252, 4, 4, 0.12);
+    color: red;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    border: 0;
+    border-radius: 10px;
+}
+#addBtn:hover{
+    scale: 0.97;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.service button ion-icon {
+    font-size: 20px;
+    padding-left: 4px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* booking added item table form  */
+
+.bookDisplay{
+    
+    height: 100vh;
+    margin-top: 35px;
+    margin-right: 50px;
+    border-radius: 20px;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 1.2fr 0.8fr;
+}
+.bookNow{
+    background-color: rgb(234, 235, 235);
+    
+    border-radius: 20px;
+    padding: 0px 5px 10px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+    
+}
+.addedItems{
+    background-color: rgb(234, 235, 235);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+}
+.addedItems h2{
+    text-align: center;
+    padding-top: 25px;
+}
+#srNo{
+    width: 20%;
+    padding-left: 12px;
+    
+}
+#tablePrice{
+    width: 20%;
+}
+#tableName{
+    width: 60%;
+    text-align: center;
+}
+
+.list{
+    height: 45vh;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    
+    bottom: 0;
+    z-index: 12;
+    font-size: 18px;
+    border-top: 3px solid black;
+}
+td, th {
+  padding: 9px;
+  border-bottom: 1px solid #000000;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+ 
+}
+
+.alertcircle{
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    font-size: 60px;
+}
+.alertcircle1{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    font-size: 30px;
+}
+.hidden{
+    display: none;
+}
+
+.fullname{
+    width: 80%;
+    height: 40px;
+    text-align: start;
+    padding-left: 12px;
+    border-radius: 6px;
+    border: 0;
+}
+
+.bookform span{
+    padding-left: 130px;
+}
+.half{
+    width: 45%;
+    height: 40px;
+    border-radius: 6px;
+    border: 0;
+    padding-left: 12px;
+}
+
+
+
+
+
+/* quality section div  */
+
+.qualities{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 120px;
+    margin-right: 40px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    text-wrap: wrap;
+    text-justify: initial;
+}
+.quality img{
+    height: 120px;
+    width: 120px;
+}
+.quality h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* newsletter section div  */
+
+.newsletter{
+    height: 35vh;
+    background-color: #007bff;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.newsText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    
+}
+.newsDetails{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.form input{
+    width: 250px;
+    height: 30px;
+    opacity: 0.8;
+    padding-left: 10px;
+}
+ .submit{
+    margin-top: 10px;
+    width: 250px;
+    border: 0;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* footer section div  */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 50px;
+   
+}
+footer div{
+    width: 20%;
+    height: 40%;
+    text-align: center;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.implinks p a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.socialmedia p ion-icon {
+    margin-top: 10px;
+    font-size: 30px;
+}
